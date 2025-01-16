@@ -160,7 +160,7 @@ figcaption {
 /* CSS Variables for Light and Dark Mode */
 :root {
   --card-bg: #e6e1dc; /* 浅色背景 */
-  --text-color: #333333; /* 浅色文本 */
+  --text-color: #1a73e8; /* 浅色文本 */
   --link-color: #1a73e8; /* 链接颜色 */
   --subtext-color: #666666; /* 辅助文本颜色 */
   --highlight-color: #ff9800; /* 高亮颜色 */

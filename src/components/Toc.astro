@@ -29,16 +29,26 @@ const hasHeadings = grouppedHeadings.length > 0;
 {hasHeadings && (
   <nav id="table-of-contents" aria-label="Table Of Contents" class="toc">
     <details open>
-      <summary>Table of Contents</summary>
-      <ul>
+      <summary class="text-sm font-semibold mb-2">Table of Contents</summary>
+      <ul class="space-y-1">
         {grouppedHeadings.map((h) => (
-          <li>
-            <a href={`#${h.slug}`}># {h.text}</a>
+          <li class="text-sm leading-tight">
+            <a
+              href={`#${h.slug}`}
+              class="hover:underline"
+            >
+              # {h.text}
+            </a>
             {h.subheadings.length > 0 && (
-              <ul>
+              <ul class="pl-4 space-y-1">
                 {h.subheadings.map((sub) => (
-                  <li>
-                    <a href={`#${sub.slug}`}>- {sub.text}</a>
+                  <li class="text-sm leading-tight">
+                    <a
+                      href={`#${sub.slug}`}
+                      class="text-gray-500 hover:underline"
+                    >
+                      - {sub.text}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -50,13 +60,14 @@ const hasHeadings = grouppedHeadings.length > 0;
   </nav>
 )}
 
+
 <style>
   details {
     /* background-color: #00000030; */
     padding: 1rem;
     border-radius: 10px;
     transition: 0.5s all;
-    border: #00000030 solid 1px;
+    border: #83838330 solid 1px;
     margin-bottom: 1rem;
     cursor: pointer;
   }
