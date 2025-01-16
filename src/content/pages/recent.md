@@ -7,4 +7,4 @@ tags:
   - Astro
 ---
 
-it's a test
+Hi, I'm AsyncX, this is my [Digital Garden](https://github.com/A5yncX/DG). I often share my life here.
