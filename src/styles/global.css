@@ -91,7 +91,7 @@ figcaption {
   all: initial;
 	overflow: hidden;
   display: flex;
-  border: 1px solid var(--border-color); /* 边框颜色 */
+  border: 3px solid var(--border-color); /* 边框颜色 */
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -108,7 +108,7 @@ figcaption {
   width: 120px;
   height: 160px;
   object-fit: cover;
-  border-right: 1px solid var(--border-color); /* 图片右侧分隔线 */
+  /* border-right: 2px solid var(--border-color); 图片右侧分隔线 */
   margin-left: 0.5rem;
   border-radius: 8px;
 }
@@ -165,7 +165,7 @@ figcaption {
   --subtext-color: #666666; /* 辅助文本颜色 */
   --highlight-color: #ff9800; /* 高亮颜色 */
   --text-color-secondary: #555555; /* 次级文本颜色 */
-  --border-color: #9b9793; /* 边框与背景色接近 */
+  --border-color: #d0d0d0; /* 边框与背景色接近 */
 }
 
 :root.dark {
@@ -175,7 +175,7 @@ figcaption {
   --subtext-color: #aaaaaa; /* 辅助文本颜色 */
   --highlight-color: #ffc107; /* 高亮颜色 */
   --text-color-secondary: #bbbbbb; /* 次级文本颜色 */
-  --border-color: #131315; /* 边框与背景色接近 */
+  --border-color: #0000000b; /* 边框与背景色接近 */
 }
 
 .expressive-code pre {
