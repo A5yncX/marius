@@ -1,7 +1,11 @@
 ---
 title: "Customizing Miniblog"
-description: "How to customize the Miniblog blog theme."
-date: "Nov 26 2024"
+pubdate: "Nov 26 2024"
+tags:
+- demo1
+- demo2
+- demo3
+- demo4
 ---
 
 ## Blog Posts

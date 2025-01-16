@@ -1,14 +1,18 @@
 ---
 import { EMAIL } from "../consts";
 import ThemeToggle from "./ThemeToggle.astro";
+import Pagefind from "./Pagefind.astro";
 ---
 
 <header class="mb-6 flex items-center justify-between">
   <nav class="flex items-center gap-4">
-    <a href="/"> home </a>
-    <a href="/posts"> posts </a>
-    <a href={`mailto:${EMAIL}`}>email</a>
+    <a href="/"> Home </a>
+    <a href="/posts"> Posts </a>
+    <a href="/tags"> Tag </a>
+    <a href="/search"> Search </a>
+    <!-- <a href={`mailto:${EMAIL}`}>email</a> -->
   </nav>
+  <!-- <Pagefind /> -->
   <ThemeToggle />
 </header>
 
