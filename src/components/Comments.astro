@@ -1,7 +1,9 @@
 ---
+declare const Astro: any; // 忽略 Astro 的类型报错
 // Get current URL dynamically
 const currentUrl = encodeURIComponent(Astro.url.toString());
 ---
+
 <div class="post-comments">
   <!-- <div style="color: var(--gray);">↓Leave something behind?↓</div> -->
   <div class="like">
@@ -114,7 +116,7 @@ const currentUrl = encodeURIComponent(Astro.url.toString());
   width: 100%;
   border-radius: 10px;
   padding: 0.25rem;
-  background-color: #00000030;
+  /* background-color: #00000030; */
   color: #a6adba;
   transition: all .5s;
   border: #00000030 solid 1px;

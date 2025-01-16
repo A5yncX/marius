@@ -6,7 +6,7 @@ import { formatDate } from "../lib/utils";
 import PageSearch from "astro-pagefind/components/Search";
 const collection = await getCollection("posts");
 const posts = collection.sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
@@ -17,7 +17,7 @@ const posts = collection.sort(
   <style>
     :root {
   --pagefind-ui-scale:0.8;
-  --pagefind-ui-primary:#393939;
+  --pagefind-ui-primary:#1E90FF;
   --pagefind-ui-text:#1E90FF;
   --pagefind-ui-background:#ffffff;
   --pagefind-ui-border:#eeeeee;

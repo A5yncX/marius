@@ -23,6 +23,7 @@ const { Content, headings } = await post.render();
   title={post.data.title}
   description={post.data.description}
   image={post.data.image}
+  className="max-w-2xl"
 >
   <main>
     <div class="flex items-center justify-between mb-5">
@@ -30,7 +31,7 @@ const { Content, headings } = await post.render();
         {post.data.title}
       </h1>
       <p class="ml-4 text-sm font-medium text-zinc-500">
-        {formatDate(post.data.date)}
+        {formatDate(post.data.pubDate)}
       </p>
     </div>
     

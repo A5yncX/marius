@@ -23,8 +23,7 @@ const { tag, posts } = Astro.props;
 ---
 
 <Layout title={`Tag: ${tag}`} description={`Posts tagged with ${tag}`}>
-  <h1>Tag: {tag}</h1>
-
+  <h1 >#{tag}</h1><br>
 <ul class="flex flex-col gap-1.5">
     {
       posts.map((post) => (
@@ -35,7 +34,7 @@ const { tag, posts } = Astro.props;
           >
             <span class="group-hover:underline">{post.data.title}</span>
             <span class="text-nowrap text-zinc-500">
-              {formatDate(post.data.date)}
+              {formatDate(post.data.pubDate)}
             </span>
           </a>
         </li>

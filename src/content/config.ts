@@ -13,7 +13,7 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().default(" "),
-    pubdate: z.coerce.date(),
+    pubDate: z.coerce.date(),
     image: z.string().default("/static/blog-placeholder.png"),
     tags: z.array(z.string()).default([]).transform(removeDuplicates),
   }),
@@ -26,7 +26,7 @@ export async function getBlogPosts() {
 
 	return posts.map((post) => {
 		const fileName = post.id.split('/').pop(); // 提取文件名称部分
-        const datePart = fileName.split('.')[0]; // 获取日期部分
+    const datePart = fileName?.split('.')[0] ?? '2001-08-06';
 		const blog_slug = post.slug.split('/')[0];
 		return {
 			...post,

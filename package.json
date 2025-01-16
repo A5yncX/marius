@@ -3,13 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "dev": "astro build && npm run postbuild && astro preview",
+    "start": "astro preferences disable devToolbar && astro dev",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "postbuild": "pagefind --site dist"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -17,9 +16,15 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.2",
+    "@microflash/remark-figure-caption": "^2.0.2",
     "astro": "^5.1.0",
+    "astro-expressive-code": "^0.40.0",
     "astro-pagefind": "^1.7.0",
+    "markdown-it": "^14.1.0",
     "pagefind": "^1.3.0",
+    "remark-directive": "^3.0.0",
+    "remark-figure-caption": "^1.0.6",
+    "sanitize-html": "^2.14.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"

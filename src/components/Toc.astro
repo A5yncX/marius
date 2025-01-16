@@ -32,12 +32,12 @@ const hasHeadings = grouppedHeadings.length > 0;
       <summary>Table of Contents</summary>
       <ul>
         {grouppedHeadings.map((h) => (
-          <li key={h.slug}>
+          <li>
             <a href={`#${h.slug}`}># {h.text}</a>
             {h.subheadings.length > 0 && (
               <ul>
                 {h.subheadings.map((sub) => (
-                  <li key={sub.slug}>
+                  <li>
                     <a href={`#${sub.slug}`}>- {sub.text}</a>
                   </li>
                 ))}
@@ -52,7 +52,7 @@ const hasHeadings = grouppedHeadings.length > 0;
 
 <style>
   details {
-    background-color: #00000030;
+    /* background-color: #00000030; */
     padding: 1rem;
     border-radius: 10px;
     transition: 0.5s all;
